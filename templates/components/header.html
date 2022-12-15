@@ -3,6 +3,7 @@
       <ul class="nav nav-pills">
         <li class="nav-item"><a href="/" {% if request.path == '/' %} class="nav-link active" {% else %} class="nav-link" {% endif %} aria-current="page">Главная</a></li>
         <li class="nav-item"><a href="/contacts/" {% if request.path == '/contacts/' %} class="nav-link active" {% else %} class="nav-link" {% endif %}>Контакты</a></li>
+      <li class="nav-item"><a href="/parser/" {% if request.path == '/parser/' %} class="nav-link active" {% else %} class="nav-link" {% endif %}>Парсер</a></li>
       </ul>
     </header>
   </div>

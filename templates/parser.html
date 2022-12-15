@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная страница</title>
+    {% include 'components/includes.html' %}
+</head>
+<body class="d-flex flex-column h-100">
+{% include 'components/header.html' %}
+<div class="px-4 py-5 my-5 text-center">
+    <h1 class="display-5 fw-bold">Парсер</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Это страница для использования парсера, пожалуйста введите кол-во страниц которое хотите спарсить</p>
+        <form method="post">
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="inputText" class="col-form-label">Кол-во страниц</label>
+  </div>
+  <div class="col-auto">
+    <input type="text" name = 'pages'class="form-control" aria-describedby="passwordHelpInline">
+  </div>
+</div>
+        <button type="submit" class="btn btn-primary btn-lg px-4 gap-3">Использовать парсер</button>
+      </div>
+    </div>
+        </form>
+
+  </div>
+
+{% include 'components/footer.html' %}
+</body>
+</html>
